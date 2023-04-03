@@ -78,3 +78,5 @@ git commit -m "Добавили инструкцию как создать pull 
 git push --set-upstream origin updategit_howto
 
 Переходим на свою страницу репозитория. Выбираем ветку updategit_howto и жмём кнопку Compare и pull request.
+
+Добавили текст через веб-браузер
