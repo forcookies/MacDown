@@ -64,19 +64,68 @@ git config --global user.email "Ввести свой имейл"
 
 Выполняем команду клонирования из своей fork-копии
 
-git clone git@github.com:*YOURE_GITHUB*/version_control.git
+```sh
+git clone git@github.com:*ваш никнейм*/название репозитория
+```
 
-Создаём новую ветку и вносим необходимые изменения в файл
+Сменить директорию
 
-git checkout -b updategit_howto
-vim git_howto.md
-git add git_howto.md
-git commit -m "Добавили инструкцию как создать pull request"
+```sh
+cd название репозитория
+```
 
-Делаем push
+Посмотреть список удалённых репозиториев
 
-git push --set-upstream origin updategit_howto
+```sh
+git remote
+```
 
-Переходим на свою страницу репозитория. Выбираем ветку updategit_howto и жмём кнопку Compare и pull request.
+```sh
+git remote show
+```
 
-Добавили текст через веб-браузер
+отобразить ветки
+
+```sh
+git status
+```
+
+Просмотреть адреса для чтения и записи, привязанные к репозиторию
+
+```sh
+git remote -v
+```
+
+Добавление удаленных репозиториев 
+
+git remote add *ваш никнейм*/название репозитория
+```
+Показать исходный репозиторий
+
+```sh
+git remote show origin
+```
+
+Отобразить изменения сделанные в удаленном репозитории локально
+
+```sh
+git pull
+```
+
+Показать данные удаленного репозитория
+
+```sh
+git fetch
+```
+
+Делаем push. Отправка изменений в удалённый репозиторий:
+
+```sh
+git push --u origin main
+```
+
+Обьединить изменения двух веток
+
+```sh
+Git rebase
+```
